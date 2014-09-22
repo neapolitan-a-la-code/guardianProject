@@ -1,0 +1,518 @@
+
+        
+    
+<!DOCTYPE html><html>
+
+<head>
+
+		    		    <title>  </title>
+
+
+
+		<link rel="stylesheet" type="text/css" href="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/styles/network-front-grid.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/zones/news/styles/zone-accent.css" media="screen" class="contrast" />
+	<link rel="stylesheet" type="text/css" href="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/zones/news/styles/grid-zone-accent.css" media="screen" class="contrast" />
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/zones/news/styles/zone-navigation-ie.css" media="screen" class="contrast" />
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+    	<script src="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/external-scripts/html5enable.js"></script>
+    <![endif]-->
+		
+
+	
+
+<link rel="stylesheet" type="text/css" href="http://combo.guim.co.uk/f7ab96e267192b2298e1680e2f75eb738811bddc/common/styles/base-typography+common/styles/grid-pixies+common/styles/grid/editable-trailblock+common/styles/header-local-info+common/styles/news-trails+common/styles/r3-component+common/styles/section-sublinks+common/styles/ticker+common/styles/top-navigation+common/styles/trail-mugshot+common/styles/weather-header.css" />
+
+
+<link rel="stylesheet" type="text/css" href="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/styles/shame.css"/>
+	<style>
+		.component h2
+		{
+			color: #ab1700;
+		}
+		.component h3
+		{
+			font-size: 18px;
+			line-height: 21px;
+		}
+		#footer
+		{
+			border-top-width: 3px;
+		}
+	</style>
+	
+	<style type="text/css">
+		#inner-wrapper {
+			background-image: url(http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/styles/images/nfBackground.gif);
+			background-repeat: repeat-y;
+			background-position: left top;
+            border-bottom: 20px solid white;
+			overflow: hidden;
+			display: inline-block;
+			zoom: 1;
+		}
+	</style>
+	
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+	if (!commonStaticRoot) {
+		var commonStaticRoot = "http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/";
+	}
+	if (!sectionStaticRoot) {
+		var sectionStaticRoot = "http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/usnetworkfront/";
+	}
+	if (!staticHost) {
+		var staticHost="http://www.guardian.co.uk/";
+	}
+	if (!sitePrefixUrl) {
+		var sitePrefixUrl = "http://www.theguardian.com";
+	}
+    if(!discussionApiUrl) {
+        var discussionApiUrl = "http://discussion.guardianapis.com";
+    }
+
+//]]>
+</script>
+
+<script>
+	
+	var guardian = {
+		r2: {
+		comScoreVideoEnabled: true,
+		dfpEnabled: true,
+		liveEnvironment: true
+		},
+		page: {
+			contentId: '/us',
+			type: 'network front',
+			contentTypes : '',
+			livePage:  false ,
+			section: 'usnetworkfront',
+			zone: 'news',
+			edition: 'US',
+			productionOffice: 'UK',
+			showAdverts: false,
+			showRelated:  true ,
+			showCommercialRelated: true,
+			contributorIds: [
+							]
+		},
+		user: {
+			edition: 'us'
+		},
+		capabilities: {
+			localStorage: (function() {
+				try {
+					localStorage.setItem("gdn-test", "test-item");
+					localStorage.removeItem("gdn-test");
+					return true;
+				} catch (e) {
+					return false;
+				}
+			})()
+		},
+		keys: {
+			socialOverlay: "gdn.r2.social.overlay.stop"
+		}
+	};
+
+</script>
+
+    	    
+
+
+
+
+
+			
+										
+
+        
+
+
+<script type='text/javascript'>
+    // Chartbeat timing variable
+    var _sf_startpt=(new Date()).getTime();
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://pasteup.guim.co.uk/js/lib/jquery/1.8.1/jquery.min.js">\x3C/script>')</script>
+<script src="http://pasteup.guim.co.uk/js/lib/jquery.cookie/1.2/jquery.cookie.min.js"></script>
+<script src="http://pasteup.guim.co.uk/js/lib/jquery.writecapture/1.0.5/jquery.writecapture.min.js"></script>
+
+<script>
+	var jQ = jQuery.noConflict();
+	jQ.ajaxSetup({ cache: true });
+</script>
+
+        
+        <script>
+        var getCookieValue = function (cookieName) {
+            var regexp = new RegExp(cookieName + "=([^;]*)")
+            var cookieMatch = document.cookie.match(regexp);
+            if (cookieMatch && cookieMatch.length > 1) {
+                return unescape(cookieMatch[1]);
+            }
+            return "";
+        }
+
+        var revSciString = (function() {
+            var hasStorage = (function() {
+                try {
+                    localStorage.setItem("xxx_localstorage_test", "xxx_localstorage_test");
+                    localStorage.removeItem("xxx_localstorage_test");
+                    return true;
+                } catch(e) {
+                    return false;
+                }
+            }());
+
+            if (hasStorage && true && localStorage.getItem('rsi_segs_csv')) {
+                return localStorage.getItem('rsi_segs_csv');
+            } else {
+                return getCookieValue("rsi_segs_csv");
+            }
+        }());
+        OAS_listpos = '';
+
+        OAS_query = 'cf=&pid=&pt=networkfront&';
+
+        // hold references to all videos on page
+        var jwVideoPlayers = [];
+    </script>
+
+        <script type='text/javascript'> function crtg_getCookie(a){var b,c,d,e=document.cookie.split(";");for(b=0;b<e.length;b++){c=e[b].substr(0,e[b].indexOf("="));d=e[b].substr(e[b].indexOf("=")+1);c=c.replace(/^\s+|\s+$/g,"");if(c==a){return unescape(d)}}return""}var crtg_nid="1476";var crtg_cookiename="cto2_guardian";var crtg_content=crtg_getCookie(crtg_cookiename);var crtg_rnd=Math.floor(Math.random()*99999999999);var crtg_url="http://rtax.criteo.com/delivery/rta/rta.js?netid="+escape(crtg_nid);crtg_url+="&cookieName="+escape(crtg_cookiename);crtg_url+="&rnd="+crtg_rnd;crtg_url+="&varName=crtg_content";var crtg_script=document.createElement("script");crtg_script.type="text/javascript";crtg_script.src=crtg_url;crtg_script.async=true;if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script)</script>
+
+
+
+
+<script src="//pasteup.guim.co.uk/js/lib/requirejs/2.1.5/require.min.js"
+			data-main="http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/scripts/main.js"
+			data-modules="gu/author-twitter-handles, http://id.guim.co.uk/static/cs/js/guardian.identity.clientside-toolkit.js"
+			data-callback=""
+			id="require-js"></script>
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	function insertStyleSheet(href) {
+		var styleObject = document.createElement('link');
+		styleObject.setAttribute('href', commonStaticRoot + href);
+		styleObject.setAttribute('type', 'text/css');
+		styleObject.setAttribute('media', 'screen');
+		styleObject.setAttribute('rel', 'stylesheet');
+		var head = document.getElementsByTagName('head')[0];
+		head.appendChild(styleObject);
+	}
+	insertStyleSheet('styles/js-on.css');
+	insertPluckStylesheet = true;
+	//]]>
+</script>
+	<script type="text/javascript" src="http://combo.guim.co.uk/f7ab96e267192b2298e1680e2f75eb738811bddc/common/scripts/convertJSONtoAd+common/scripts/guardian.geolocation+common/scripts/guardian.r2.OmnitureTracking+common/scripts/mediamath-tag+common/scripts/signinTopNav+common/scripts/ticker.js"></script>
+
+
+<script type='text/javascript'>
+ensurePackage('guardian.r2.omniture');
+guardian.r2.omniture.isAvailable = function(){
+			return true;
+	}
+</script>
+
+
+	
+</head>
+
+<body class="network-front">
+
+<div class="twelve-col" id="wrapper">
+	
+    
+    	    	    	    	    	    	    	    
+	
+
+<div id="header">
+
+		    	    	     
+	
+
+	    
+
+<div class="top-navigation twelve-col top-navigation-js">
+	<div class="user-functions">
+		<div id="video-settings">
+    <div class="cookied">
+        <p class="on"><a class="autoplay-off" href="#skiplinks">Turn autoplay off</a></p>
+        <p class="off"><a class="autoplay-on" href="#skiplinks">Turn autoplay on</a></p>
+    </div>
+    <div class="not-cookied">
+        <p>Please activate cookies in order to turn autoplay off</p>
+    </div>
+</div>
+
+<div id="skiplinks">
+	<ul>
+		<li><a href="#box" accesskey="s">Jump to content [s]</a></li>
+				<li><a href="#global-nav" accesskey="0">Jump to site navigation [0]</a></li>
+		<li><a href="#searchbeta" accesskey="4">Jump to search [4]</a></li>
+		<li><a href="http://www.theguardian.com/help/terms-of-service" accesskey="8">Terms and conditions [8]</a></li>
+	</ul>
+</div>
+               
+    
+    
+    
+    
+        
+    
+    
+    
+	
+	
+
+
+<div id="edition-selector">
+
+    <div id="drop-down-edition" class="change-to-us" tabindex="20">
+        <h2>Edition:</h2>
+                                    <span class="UK"><a href="http://www.theguardian.com/edition-permission/uk">UK</a></span>
+                                                <span class="US current-edition">US</span>
+                                                <span class="AU"><a href="http://www.theguardian.com/edition-permission/au">AU</a></span>
+                        </div>
+
+</div>
+
+
+<div class="user-details">
+    <div class="drop-down id-profile-links initially-off">
+        <h2 class="id-populate-with-display-name"></h2>
+        <ul>
+            <li><a href="https://id.theguardian.com/profile/?returnUrl=http://www.theguardian.com/us">Your activity</a></li>
+            <li><a href="https://id.theguardian.com/email/list?returnUrl=http://www.theguardian.com/us">Email subscriptions</a></li>
+            <li><a href="https://id.theguardian.com/dashboard?returnUrl=http://www.theguardian.com/us">Account details</a></li>
+            <li><a href="https://id.theguardian.com/linked-services?returnUrl=http://www.theguardian.com/us">Linked services</a></li>
+            <li><a href="https://id.theguardian.com/signout?returnUrl=http://www.theguardian.com/us">Sign out</a></li>
+        </ul>
+    </div>
+
+    <noscript>
+        <span><a href="https://id.theguardian.com/dashboard?returnUrl=http://www.theguardian.com/us">Profile</a></span>
+    </noscript>
+
+    <span class='id-sign-in-top-nav initially-off'><a></a></span>
+    <span class="trackable-component" style="background-color:#4bc6df" data-component="ngw-optin"><a href="/preference/platform/mobile?page=http%3A%2F%2Fwww.theguardian.com%2Fus%3Fview%3Dmobile%23opt-in-message" style="color:white" class="switch-to-mobile" data-link-name="Switch to beta" rel="nofollow">Beta</a></span>
+
+</div>
+			</div>
+	
+	<div class="other-functions">
+							</div>
+		
+</div>
+
+
+                                                        
+                                                                                                                <span class="trackable-component component-wrapper four-col" data-component="Network front:network-front main-5 most read:microapp zeitgeist:Most Viewed Section Front">
+                                                    <style>
+  .m-zeitgeist h2 { border-top: none !important; font-weight: bold; margin-bottom: 0 !important; padding-top: 0 !important;}
+  .m-zeitgeist .tabs { margin-right: 7px !important; }
+  .m-zeitgeist #att-panes { background-color: #fff; float: left; }
+  .m-zeitgeist .zg-date { color: #D61D00; }
+  .m-zeitgeist ol li { clear: both; padding-left: 15px; }
+  .m-zeitgeist .rank { float: left; margin-left: -15px; }
+  .m-zeitgeist .kicker { font-weight: bold; }
+  .m-zeitgeist ol li.thumb, .m-zeitgeist .footer { padding-left: 0; }
+  .m-zeitgeist ol li.thumb .rank { margin-left: 0; }
+  .m-zeitgeist ol li img { float: left; margin: 0 10px 3px 0; }
+
+  .m-zeitgeist #most-zeitgeist ol li { border-top: none; padding: 0 0 0 5px; border-top: none;}
+  .m-zeitgeist #most-zeitgeist ol li .zeit-link {background-color: #fff; padding: 2px 0 6px 5px; border-top: 1px dotted #999; }
+  .m-zeitgeist #most-zeitgeist ol li.footer{ border-top:1px dotted #999; padding: 2px 0 6px 0;}
+
+  /* zeit-up */
+  .m-zeitgeist #most-zeitgeist .what-is { float: none; padding: 0 3px; vertical-align: middle; cursor: pointer; }
+  .about-zeit { position: relative; }
+  .zeit-popup { position: absolute; display: none; background-color: #dbedf3; color: #333; padding: 6px; width: 200px; }
+  
+  div.m-zeitgeist .capsule { background: #fff !important; border: none !important; padding: none !important; }
+  div.m-zeitgeist div.zeit-link { margin-bottom: 0 !important; }
+  #promo div.m-zeitgeist div.capsule { padding: 0 !important; }
+
+		.fade-1 { background-color: #333333 !important;}
+		.fade-2 { background-color: #555555 !important;}
+		.fade-3 { background-color: #777777 !important;}
+		.fade-4 { background-color: #999999 !important;}
+		.fade-5 { background-color: #BBBBBB !important;}
+		
+		.m-zeitgeist div.hd { padding-bottom: 0; }
+		.m-zeitgeist.most-viewed div.hd { padding-bottom: 7px; }
+
+		/* make r3 style */
+		.five-col .m-zeitgeist .hd,
+		.news-grid .m-zeitgeist .hd {
+				margin-bottom: 0;
+		}
+
+		.five-col .m-zeitgeist .bd,
+		.news-grid .m-zeitgeist .bd {
+				background-color: #ededed;
+				float: left;
+				margin-bottom: 20px;
+		}
+
+		.five-col .m-zeitgeist #att-panes,
+		.news-grid .m-zeitgeist #att-panes,
+		.news-grid .m-zeitgeist .bd,
+		.five-col .m-zeitgeist .bd {
+				width: 100%;
+		}
+		
+		.five-col .m-zeitgeist {
+				float: left;
+				width: 100%;
+		}
+		
+img.tinythumb { width: 140px }
+</style>
+<script type="text/javascript">
+jQ(function($){$('.about-zeit').each(function(){var distance=10;var time=250;var hideDelay=500;var hideDelayTimer=null;var beingShown=false;var shown=false;var trigger=$('.what-is',this);var info=$('.zeit-popup',this).css('opacity',0);$([trigger.get(0),info.get(0)]).mouseover(function(){if(hideDelayTimer)clearTimeout(hideDelayTimer);if(beingShown||shown){return;}else{beingShown=true;info.css({top:-77,right:0,display:'block'}).animate({top:'-='+distance+'px',opacity:1},time,'swing',function(){beingShown=false;shown=true;});}return false;}).mouseout(function(){if(hideDelayTimer)clearTimeout(hideDelayTimer);hideDelayTimer=setTimeout(function(){hideDelayTimer=null;info.animate({top:'-='+distance+'px',opacity:0},time,'swing',function(){shown=false;info.css('display','none');});},hideDelay);return false;});});});
+</script>
+
+  <!------ widget old front: networkusprod : 2014-09-22 10:36:00.856830 ------>
+  <div class="m-zeitgeist component attention-data">
+    <div class="hd">
+      <h2>On the Guardian</h2>
+    </div>
+	
+  	<div class="bd">
+  		<div id="att-toggle">
+  			<ul class="tabs">
+					<li>
+        		<a class="active" href="#att-most-viewed">Most viewed</a>
+        	</li>
+	      	
+					<li>
+        		<a class="inactive" href="#att-latest">Latest</a>
+        	</li>
+	        
+	        
+			</ul>
+			 
+			<div id="att-panes">
+
+				<div class="att-tabs att-toggle-pane" id="att-most-viewed">
+    			<div id="most-viewed" class="capsule">
+              <p class="b2 zg-date">Last 24 hours</p>
+              	<ol>
+                  
+                  <li class="l1 thumb">
+										
+											
+												<img  class="tinythumb" src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/19/1411145056904/Racegoers-at-Ascot---they-006.jpg" />
+											
+										
+      							<span class="rank">1. </span>
+            				<a href="http://www.theguardian.com/lifeandstyle/quiz/2014/sep/22/are-you-posh-quiz">How posh are you? Take our quiz</a>
+                  </li>
+                  
+                  <li class="l1">
+										
+      							<span class="rank">2. </span>
+            				<a href="http://www.theguardian.com/business/2014/sep/22/tesco-investigators-overstating-profit-250m">Tesco suspends staff and calls in investigators after overstating profits</a>
+                  </li>
+                  
+                  <li class="l1">
+										
+      							<span class="rank">3. </span>
+            				<a href="http://www.theguardian.com/football/blog/2014/sep/22/premier-league-10-talking-points-weekend">Premier League: 10 talking points from the weekend’s action</a>
+                  </li>
+                  
+                  <li class="l1">
+										
+      							<span class="rank">4. </span>
+            				<a href="http://www.theguardian.com/lifeandstyle/2014/sep/21/-sp-posh-britain-the-riot-club-bullingdon-privilege">Posh Britain: will they always lord it over us?</a>
+                  </li>
+                  
+                  <li class="l1">
+										
+      							<span class="rank">5. </span>
+            				<a href="http://www.theguardian.com/society/2014/sep/21/linda-tirado-poverty-hand-to-mouth-interview">Linda Tirado: ‘It was insane. I got 20,000 emails in a week’</a>
+                  </li>
+                  
+        					<li class="more-most-viewed l1 footer">
+							
+							<a href="http://www.theguardian.com/most-viewed">More most viewed</a>
+							
+            			</li>
+          			</ol>
+          </div>
+				</div>
+			
+				
+				<div class="att-tabs att-toggle-pane initially-off" id="att-latest">
+    			<div id="latest" class="capsule">
+              <p class="b2 zg-date">Last 24 hours</p>
+             	<ol>
+							
+							<li class="l1 thumb">
+								
+									
+										<img  class="tinythumb" src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/22/1411381480945/Turkish-Syrian-border-006.jpg" />
+									
+								
+								<span class="rank">1. </span>
+								<a href="http://www.theguardian.com/world/2014/sep/22/syrian-kurdish-fighters-islamic-state-isis-kobani">Syrian Kurdish fighters halt Islamic State advance near Kobani</a>
+							</li>
+							
+							<li class="l1">
+								
+								<span class="rank">2. </span>
+								<a href="http://www.theguardian.com/global-development/2014/sep/22/activists-womens-rights-un-new-york">Activists urge renewed women’s rights focus as UN meets in New York</a>
+							</li>
+							
+							<li class="l1">
+								
+								<span class="rank">3. </span>
+								<a href="http://www.theguardian.com/business/live/2014/sep/22/tesco-launches-inquiry-after-overstating-profit-forecasts-by-250m-business-live">Tesco suspends four senior staff as mis-accounting investigation begins - business live</a>
+							</li>
+							
+							<li class="l1">
+								
+								<span class="rank">4. </span>
+								<a href="http://www.theguardian.com/sport/99-94-cricket-blog/2014/sep/22/county-cricket-weeks-final-over-middlesex-nash-hampshire">County cricket: the week's final over</a>
+							</li>
+							
+							<li class="l1">
+								
+								<span class="rank">5. </span>
+								<a href="http://www.theguardian.com/sport/live/2014/sep/22/brownlow-medal-2014-joel-selwood-favourite-for-afl-prize-live">Brownlow Medal 2014: Joel Selwood favourite for AFL prize – live!</a>
+							</li>
+							
+							<li class="more-latest l1 footer">
+								
+								<a href="http://www.theguardian.com/global/all">All today&#39;s stories</a>
+								
+							</li>
+						</ol>
+          </div>
+				</div>
+				
+
+        
+			
+      </div>
+		</div>
+	</div>
+</div>
+
+
+</span> </div></div>
+
+
+
+</body>
+</html>
