@@ -1,16 +1,21 @@
 $(document).ready(function() {
+  
+  
+var fillNews = function(sect) {
+
 $.ajax({
     type: "GET",
     dataType: "jsonp",
     cache: false,
-    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=uk-news",
+    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=" + sect,
     success: function(data) {
+        //window.alert("in ajax" + sect);
         for (var i = 0; i < 5; i++) {
           if  (i === 0) {
-        $("#uk-news").append("<img src='" + data.response.results[i].fields.thumbnail + "'>")
+        $("#" + sect).append("<img src='" + data.response.results[i].fields.thumbnail + "'>");
           }
           
-        $("#uk-news").append((i+1) + ". " + "<a target='_blank' href='"
+        $("#" + sect).append((i+1) + ". " + "<a href='"
             + data.response.results[i].webUrl + "'>"
             + data.response.results[i].webTitle + "</a><br>"
                + data.response.results[i].fields.trailText + "<br><br>");
@@ -18,45 +23,13 @@ $.ajax({
         }
     });
 
-$.ajax({
-    type: "GET",
-    dataType: "jsonp",
-    cache: false,
-    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=football",
-    success: function(data) {
-        for (var i = 0; i < 5; i++) {
-          
-          if  (i === 0) {
-        $("#football").append("<img src='" + data.response.results[i].fields.thumbnail + "'>")
-          }
-          
-            $("#football").append((i+1) + ". " + "<a target='_blank' href='"
-            + data.response.results[i].webUrl + "'>"
-            + data.response.results[i].webTitle + "</a><br>"
-               + data.response.results[i].fields.trailText + "<br><br>");
-            }
-        }
-    });
-    
-    
-$.ajax({
-    type: "GET",
-    dataType: "jsonp",
-    cache: false,
-    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=travel",
-    success: function(data) {
-        for (var i = 0; i < 5; i++) {
-          
-          if  (i === 0) {
-        $("#travel").append("<img src='" + data.response.results[i].fields.thumbnail + "'>")
-          }
-          
-      $("#travel").append((i+1) + ". " + "<a target='_blank' href='"
-            + data.response.results[i].webUrl + "'>"
-            + data.response.results[i].webTitle + "</a><br>"
-               + data.response.results[i].fields.trailText + "<br><br>");
-            }
-        }
-    });
-    
- });
+};
+
+fillNews ("uk-news");
+
+fillNews ("football");
+
+fillNews ("travel");
+
+  
+});
