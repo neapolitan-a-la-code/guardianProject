@@ -7,7 +7,7 @@ $.ajax({
     type: "GET",
     dataType: "jsonp",
     cache: false,
-    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=" + sect,
+    url: "http://content.guardianapis.com/search?api-key=qbgzuh9db2dke2gym45p59wb&show-fields=all&order-by=newest&section=" + sect,
     success: function(data) {
         //window.alert("in ajax" + sect);
         for (var i = 0; i < 5; i++) {
@@ -29,7 +29,10 @@ fillNews ("uk-news");
 fillNews ("football");
 fillNews ("travel");
 
+$('tabs').tabs({ selected: 2 });
 
+var counter = 0;
+var topics = ["environment", "politics", "culture", "money"];
  
     $("div#tabs").tabs();
 
@@ -37,11 +40,26 @@ fillNews ("travel");
 
         var num_tabs = $("div#tabs ul li").length + 1;
 
+  if (counter === 0) {
+    
         $("div#tabs ul").append(
-            "<li><a href='#tab" + num_tabs + "'>" + "+" + "</a></li>"
+            "<li><a href='#politics"+ "'>" + "politics" + "</a></li>"
         );
+    
+        fillNews ("politics");
+        }
         
         
+          if (counter === 1) {
+        $("div#tabs ul").append(
+            "<li><a href='#environment"+ "'>" + "environment" + "</a></li>");
+            
+        fillNews ("environment");
+        }
+        
+        
+        counter ++;
+
         
 //CONTENT OF NEW TAB $("div#tabs").append(
 //            "<div id='tab" + num_tabs + "'>#" + num_tabs + "</div>"
