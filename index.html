@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="gApiPull.js"></script>
+    <script type="text/javascript" src="GAPI.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
 
 
   <script>
@@ -16,51 +17,24 @@
   </script>
 </head>
 <body>
- 
+
+
 <div id="tabs">
   <ul>
-    <li><a href="#tabs-1">UK News</a></li>
-    <li><a href="#tabs-2">Football</a></li>
-    <li><a href="#tabs-3">Travel</a></li>
+    <li><a href="#uk-news">uk-news</a></li>
+    <li><a href="#football">football</a></li>
+    <li><a href="#travel">travel</a></li>
   </ul>
-  <div id="tabs-1">
-    <p>
-      
-      <div id="results"></div>
-<script type='text/template' id='article-template'>
-    <% _.each(results, function(article) { %>
-    <ul>
-        <li style="border-bottom: 1px solid #000; width: 80%;">
-            <a href='<%= article.webUrl %>'><%= article.webTitle %></a>
-        </li>
-    </ul>
-    <% }); %>
-</script>
-
-      
-      
-    </p>
+  <div id="uk-news">
+    <p></p>
   </div>
-  <div id="tabs-2">
-    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  <div id="football">
+    <p></p>
   </div>
-  <div id="tabs-3">
-    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  <div id="travel">
+    <p></p>
   </div>
 </div>
- <br>
- 
-<script type='text/template' id='article-template'>
-    <% _.each(results, function(article) { %>
-    <ul>
-        <li style="border-bottom: 1px solid #000; width: 80%;">
-            <a href='<%= article.webUrl %>'><%= article.webTitle %></a>
-        </li>
-    </ul>
-    <% }); %>
-</script>
 
- 
 </body>
 </html>
