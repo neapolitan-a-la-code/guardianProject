@@ -26,10 +26,28 @@ $.ajax({
 };
 
 fillNews ("uk-news");
-
 fillNews ("football");
-
 fillNews ("travel");
 
+
+ 
+    $("div#tabs").tabs();
+
+    $("div#tabs ul li.plus").click(function() {
+
+        var num_tabs = $("div#tabs ul li").length + 1;
+
+        $("div#tabs ul").append(
+            "<li><a href='#tab" + num_tabs + "'>" + "+" + "</a></li>"
+        );
+        
+        
+        
+//CONTENT OF NEW TAB $("div#tabs").append(
+//            "<div id='tab" + num_tabs + "'>#" + num_tabs + "</div>"
+//        );
   
+        $("div#tabs").tabs("refresh");
+    });
 });
+
