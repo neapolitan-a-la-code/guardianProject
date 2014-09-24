@@ -1,49 +1,80 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>jQuery UI Tabs - Default functionality</title>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs();
-  });
-  </script>
+<!--<meta http-equiv = "refresh" content = "30"/>-->
+ <meta charset="utf-8">
+
+ <title>The NeapNews</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+ <link rel="stylesheet" style="text/css" href="stylesheet.css">
+
+
+    <script>
+      $(function() {
+      $( "#tabs" ).tabs();
+      });
+    </script>
+ 
 </head>
+
+
 <body>
-
-
-<div id="tabs">
-  <ul>
-
-    <li class="plus"><a href="#plus">+</a></li>
-    <li><a href="#uk-news">uk-news</a></li>
-    <li><a href="#football">football</a></li>
-    <li><a href="#travel">travel</a></li>
+  
+  <div id="tabs" class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6"> 
+    <h1></h1> 
+    <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
+    </div>
+    <!--<h1 font-family: arial,sans-serif;>News</h1>-->
+    <h1></h1>
+      
+    <ul class="nav nav-tabs" role="tablist">                    <!--syntax for Bootstrap-->  
+        <li class="active" ><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
+      </li>
+        <li><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
+      </li>
+        <li><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
+      </li>
+       
+    </ul>
+  
     
-  </ul>
-  <div id="uk-news">
-    <p></p>
-  </div>
-  <div id="football">
-    <p></p>
-  </div>
-  <div id="travel">
-    <p></p>
-  </div>
-    <div id="politics">
-    <p></p>
-  </div>
-    <div id="environment">
-    <p></p>
-  </div>
+<div class="tab-content">
+<div class="tab-pane active" id="uk-news"></div>
+<div class="tab-pane" id="football"></div>
+<div class="tab-pane" id="travel"></div>
+
 </div>
 
+  <!--<div id="uk-news">
+  </div>
+  
+  <div id="football">
+  </div>
+  
+  <div id="travel">
+  </div>
+
+  <div id="plus">
+  </div>-->
+    
+  </div>
+  
+ </div>
 
 
+<script>
+//  $(this).addClass("active");
+//    });
+</script>
+
+
+<script type="text/javascript" src="script.js"></script>
 </body>
-  <script type="text/javascript" src="GAPI.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
 </html>
