@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <!-- below two links seem unnecessary? -->
+  <!-- below two links seem unnecessary? probably can just delete-->
 <!--<meta http-equiv = "refresh" content = "30"/>-->
  <!--<meta charset="utf-8">-->
 
@@ -28,38 +28,35 @@
 <body>
   
   <div id="tabs" class="container-fluid">
-  <div class="row">
-  <div class="col-xs-3"></div>
-  <div class="col-xs-6"> 
-    <h1></h1> 
-    <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
-    </div>
-    <!--<h1 font-family: arial,sans-serif;>News</h1>-->
-    <h1></h1>
-      
+    <div class="row">
+      <div class="col-xs-3"></div>
+    <div class="col-xs-6"> 
+      <h1></h1> 
+      <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
+      </div>
 
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="active" ><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
-      </li>
+      <ul class="nav nav-tabs" role="tablist">
+       <!-- took this out of the <li> below  class="active" because it didn't work -->
+        <li><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
+        </li>
         <li><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
-      </li>
+        </li>
         <li><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
-      </li>
+        </li>
        
-    </ul>
+      </ul>
   
-<!-- below how the content in script.js is called -->    
-<div class="tab-content">
-<div class="tab-pane active" id="uk-news"></div>
-<div class="tab-pane" id="football"></div>
-<div class="tab-pane" id="travel"></div>
+    <!-- below how the content in script.js is called -->    
+    <div class="tab-content">
+      <div class="tab-pane active" id="uk-news"></div>
+      <div class="tab-pane" id="football"></div>
+      <div class="tab-pane" id="travel"></div>
 
-</div>
-
+    </div>
     
-  </div>
+    </div>
   
- </div>
+  </div>
 
 <script type="text/javascript" src="script.js"></script>
 </body>
