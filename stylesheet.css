@@ -1,79 +1,10 @@
-.component h2 {
-			color: #ab1700;
-		}
-.component h3 {
-			font-size: 18px;
-			line-height: 21px;
-		}
-#footer {
-			border-top-width: 3px;
-		}
-#inner-wrapper {
-			background-image: url(http://static.guim.co.uk/static/f7ab96e267192b2298e1680e2f75eb738811bddc/common/styles/images/nfBackground.gif);
-			background-repeat: repeat-y;
-			background-position: left top;
-            border-bottom: 20px solid white;
-			overflow: hidden;
-			display: inline-block;
-			zoom: 1;
-		}
-.m-zeitgeist h2 { border-top: none !important; font-weight: bold; margin-bottom: 0 !important; padding-top: 0 !important;}
-  .m-zeitgeist .tabs { margin-right: 7px !important; }
-  .m-zeitgeist #att-panes { background-color: #fff; float: left; }
-  .m-zeitgeist .zg-date { color: #D61D00; }
-  .m-zeitgeist ol li { clear: both; padding-left: 15px; }
-  .m-zeitgeist .rank { float: left; margin-left: -15px; }
-  .m-zeitgeist .kicker { font-weight: bold; }
-  .m-zeitgeist ol li.thumb, .m-zeitgeist .footer { padding-left: 0; }
-  .m-zeitgeist ol li.thumb .rank { margin-left: 0; }
-  .m-zeitgeist ol li img { float: left; margin: 0 10px 3px 0; }
+.logo {
+width: 500px;
+height: 145px;
+}
 
-  .m-zeitgeist #most-zeitgeist ol li { border-top: none; padding: 0 0 0 5px; border-top: none;}
-  .m-zeitgeist #most-zeitgeist ol li .zeit-link {background-color: #fff; padding: 2px 0 6px 5px; border-top: 1px dotted #999; }
-  .m-zeitgeist #most-zeitgeist ol li.footer{ border-top:1px dotted #999; padding: 2px 0 6px 0;}
-
- /* zeit-up */
-  .m-zeitgeist #most-zeitgeist .what-is { float: none; padding: 0 3px; vertical-align: middle; cursor: pointer; }
-  .about-zeit { position: relative; }
-  .zeit-popup { position: absolute; display: none; background-color: #dbedf3; color: #333; padding: 6px; width: 200px; }
-  
-  div.m-zeitgeist .capsule { background: #fff !important; border: none !important; padding: none !important; }
-  div.m-zeitgeist div.zeit-link { margin-bottom: 0 !important; }
-  #promo div.m-zeitgeist div.capsule { padding: 0 !important; }
-
-		.fade-1 { background-color: #333333 !important;}
-		.fade-2 { background-color: #555555 !important;}
-		.fade-3 { background-color: #777777 !important;}
-		.fade-4 { background-color: #999999 !important;}
-		.fade-5 { background-color: #BBBBBB !important;}
-		
-		.m-zeitgeist div.hd { padding-bottom: 0; }
-		.m-zeitgeist.most-viewed div.hd { padding-bottom: 7px; }
-
-		/* make r3 style */
-		.five-col .m-zeitgeist .hd,
-		.news-grid .m-zeitgeist .hd {
-				margin-bottom: 0;
-		}
-
-		.five-col .m-zeitgeist .bd,
-		.news-grid .m-zeitgeist .bd {
-				background-color: #ededed;
-				float: left;
-				margin-bottom: 20px;
-		}
-
-		.five-col .m-zeitgeist #att-panes,
-		.news-grid .m-zeitgeist #att-panes,
-		.news-grid .m-zeitgeist .bd,
-		.five-col .m-zeitgeist .bd {
-				width: 100%;
-		}
-		
-		.five-col .m-zeitgeist {
-				float: left;
-				width: 100%;
-		}
-		
-img.tinythumb { width: 140px }
-
+img {
+float: left;
+padding-top: 5px;
+padding-right: 15px;
+}
