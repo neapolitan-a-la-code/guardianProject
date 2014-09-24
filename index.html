@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- below two links seem unnecessary? -->
 <!--<meta http-equiv = "refresh" content = "30"/>-->
- <meta charset="utf-8">
+ <!--<meta charset="utf-8">-->
 
  <title>The NeapNews</title>
 
@@ -25,16 +27,18 @@
 
 <body>
   
-  <div id="tabs" class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6"> 
+  <div id="tabs" class="container-fluid">
+  <div class="row">
+  <div class="col-xs-3"></div>
+  <div class="col-xs-6"> 
     <h1></h1> 
     <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
     </div>
     <!--<h1 font-family: arial,sans-serif;>News</h1>-->
     <h1></h1>
       
-    <ul class="nav nav-tabs" role="tablist">                    <!--syntax for Bootstrap-->  
+
+    <ul class="nav nav-tabs" role="tablist">
         <li class="active" ><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
       </li>
         <li><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
@@ -44,7 +48,7 @@
        
     </ul>
   
-    
+<!-- below how the content in script.js is called -->    
 <div class="tab-content">
 <div class="tab-pane active" id="uk-news"></div>
 <div class="tab-pane" id="football"></div>
@@ -52,28 +56,10 @@
 
 </div>
 
-  <!--<div id="uk-news">
-  </div>
-  
-  <div id="football">
-  </div>
-  
-  <div id="travel">
-  </div>
-
-  <div id="plus">
-  </div>-->
     
   </div>
   
  </div>
-
-
-<script>
-//  $(this).addClass("active");
-//    });
-</script>
-
 
 <script type="text/javascript" src="script.js"></script>
 </body>
