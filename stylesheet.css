@@ -1,11 +1,14 @@
 .logo {
-	width: 500px;
-	height: 145px;
+	width: 450px;
+	height: 120px;
 	display: block;
 	margin: 0 auto;
 }
 
-img {
+.tab-content img {
 	padding-top: 5px;
 	padding-right: 15px;
+	float: left;
 }
+
+.
