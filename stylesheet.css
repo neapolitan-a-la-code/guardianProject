@@ -13,10 +13,6 @@
 	border-top: solid 10px #0061A6;
 }
 
-#uktab {
-	background-color: ;
-}
-
 #uktab a:hover {
 	background-color: #D61D00;
 	color: white !important;
@@ -31,3 +27,25 @@
 	background-color: #0061A6;
 	color: white !important;
 }
+
+#tab-names {
+	font-family: arial,sans-serif;
+	font-size: 125%;
+}
+
+#plustab a {
+	color: purple;
+}
+
+#uktab a {
+	color: #D61D00;
+}
+
+#footballtab a {
+	color: #008000;
+}
+
+#traveltab a {
+	color: #066EC9;
+}
+        

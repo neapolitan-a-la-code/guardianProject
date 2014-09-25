@@ -2,24 +2,13 @@
 <html>
 <head>
 
- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
- <title>The NeapNews</title>
+  <title>The NeapNews</title>
 
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-  <link rel="stylesheet" style="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-    <script>
-      $(function() {
-      $( "#tab-names" ).tabs();
-      });
-    </script>
- 
+  <link rel="stylesheet" style="text/css" href="stylesheet.css">
 </head>
 
 
@@ -27,11 +16,11 @@
 
   <div class="container-fluid" id ="headerbox">
     <div class="row">
-      <div class="col-xs-3"></div>
-      <div class="col-xs-6"> 
+      <div class="col-md-3 col-sm-2"></div>
+      <div class="col-md-6 col-sm-8 col-xs-12"> 
         <div class="topdiv"></div>
-        <div class="row" class="picdiv" class="col-xs-6">
-          <a href="http://neapolitan-a-la-code.github.io/blog/"><img class="img-responsive" class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
+        <div class="row picdiv" class="col-sm-6 col-xs-12">
+          <a href="http://neapolitan-a-la-code.github.io/blog/"><img class="img-responsive logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
         </div>
       </div>
     </div>
@@ -40,16 +29,17 @@
 
   <div id="tabs" class="container-fluid">
     <div class="row">
-      <div class="col-xs-3"></div>
-      <div class="col-xs-6">
+      <div class="col-md-3 col-sm-2"></div>
+      <div class="col-md-6 col-sm-8 col-xs-12">
         <ul id="tab-names" class="nav nav-tabs">
-          <li id="plustab"><a href="#uk-news" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">+</a>
+          <li id="plustab"><a href="#uk-news" role="tab" data-toggle="tab">+</a>
           </li>
-          <li id="uktab"><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
+          <li id="uktab"><a href="#uk-news" role="tab" data-toggle="tab">UK News</a>
           </li>
-          <li id="footballtab"><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
+          <li id="footballtab"><a href="#football" role="tab" data-toggle="tab">Football</a>
           </li>
-          <li id="traveltab"><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
+          <li id="traveltab"><a href="#travel" role="tab" data-toggle="tab">Travel</a>
+          </li>
         </ul>
   
     <!-- below how the content in script.js is called -->
@@ -63,6 +53,8 @@
     </div>
   </div>
 
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
