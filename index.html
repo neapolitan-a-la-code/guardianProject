@@ -18,7 +18,7 @@
 
     <script>
       $(function() {
-      $( "#tabs" ).tabs();
+      $( "#tab-names" ).tabs();
       });
     </script>
  
@@ -30,32 +30,39 @@
   <div id="tabs" class="container-fluid">
     <div class="row">
       <div class="col-xs-3"></div>
-    <div class="col-xs-6"> 
-      <h1></h1> 
+    <div class="col-xs-6">
+      <h1></h1>
       <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
       </div>
 
       <ul id="tab-names" class="nav nav-tabs">
        <!-- took this out of the <li> below  class="active" because it didn't work -->
+       
+       
+<li id="plustab"><a href="#uk-news" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">+</a>
+        </li>
+       
         <li id="uktab"><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
         </li>
         <li id="footballtab"><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
         </li>
         <li id="traveltab"><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
-        </li>
+
        
       </ul>
   
-    <!-- below how the content in script.js is called -->    
+    <!-- below how the content in script.js is called -->
     <div class="tab-content">
       <div class="tab-pane active" id="uk-news"></div>
       <div class="tab-pane" id="football"></div>
       <div class="tab-pane" id="travel"></div>
+      <div class="tab-pane" id="culture"></div>
 
     </div>
     
     </div>
   
+  </div>
   </div>
 
 <script type="text/javascript" src="script.js"></script>

@@ -9,7 +9,6 @@ $.ajax({
     cache: false,
     url: "http://content.guardianapis.com/search?api-key=qbgzuh9db2dke2gym45p59wb&show-fields=all&order-by=newest&section=" + sect,
     success: function(data) {
-        //window.alert("in ajax" + sect);
         for (var i = 0; i < 5; i++) {
           if  (i === 0) {
         $("#" + sect).append("<img src='" + data.response.results[i].fields.thumbnail + "'>");
@@ -23,49 +22,57 @@ $.ajax({
         }
     });
 
+
+      $( "#tab-names" ).tabs();
+
 };
 
 fillNews ("uk-news");
 fillNews ("football");
 fillNews ("travel");
 
-$('tabs').tabs({ selected: 2 });
+function capFirstLetter(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
-var counter = 0;
-var topics = ["environment", "politics", "culture", "money"];
- 
+var topicCount = 0;
+var topics = ["culture","politics","world","money"];
+
+
     $("div#tabs").tabs();
 
-    $("div#tabs ul li.plus").click(function() {
+    $("li#plustab").click(function() {
+      
+      
+      var topicToCreate = (topics[topicCount]);
+      var topicCapTitle = capFirstLetter(topicToCreate);
 
         var num_tabs = $("div#tabs ul li").length + 1;
 
-  if (counter === 0) {
-    
-        $("div#tabs ul").append(
-            "<li><a href='#politics"+ "'>" + "politics" + "</a></li>"
+        if (topicCount  == topics.length ) {
+          return null;
+        }
+
+        $("ul#tab-names").append(
+            "<li id='" + topicToCreate + "tab'><a href='#" + topicToCreate + "' style='color:#066EC9  ; font-family: arial,sans-serif;' role='tab' data-toggle='tab'>" + topicCapTitle + "</a></li>"
         );
-    
-        fillNews ("politics");
-        }
         
         
-          if (counter === 1) {
-        $("div#tabs ul").append(
-            "<li><a href='#environment"+ "'>" + "environment" + "</a></li>");
-            
-        fillNews ("environment");
-        }
+$("div.tab-content").append(
+            "<div class='tab-pane' style ='display: block' id=" + topicToCreate +"></div>"
+        );
         
         
-        counter ++;
+        fillNews (topicToCreate);
 
         
-//CONTENT OF NEW TAB $("div#tabs").append(
-//            "<div id='tab" + num_tabs + "'>#" + num_tabs + "</div>"
-//        );
-  
         $("div#tabs").tabs("refresh");
+        topicCount ++;
+        
+       
     });
+
+   
 });
 
