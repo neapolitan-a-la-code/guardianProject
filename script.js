@@ -13,19 +13,20 @@ var fillNews = function(sect) {
                 if  (i === 0) {
                     $("#" + sect).append("<img src='" + data.response.results[i].fields.thumbnail + "'>");
                 }
-          
                 $("#" + sect).append((i+1) + ".  " + "<a href='"
                 + data.response.results[i].webUrl + "'>"
                 + data.response.results[i].webTitle + "</a><br>"
                 + data.response.results[i].fields.trailText + "<br><br>");
             }
         }
-    });
+    })
 };
+
 
 fillNews ("uk-news");
 fillNews ("football");
 fillNews ("travel");
+
 
 function capFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -35,9 +36,9 @@ var topicCount = 0;
 var topics = ["culture","politics","world","money"];
 
 
-$("div#tabs").tabs();
+$("div #tabs").tabs();
 
-$("li#plustab").click(function() {
+$("li #plustab").click(function() {
     var topicToCreate = (topics[topicCount]);
     var topicCapTitle = capFirstLetter(topicToCreate);
     var num_tabs = $("div#tabs ul li").length + 1;
@@ -46,14 +47,14 @@ $("li#plustab").click(function() {
         return null;
     }
 
-    $("ul#tab-names").append(
+    $("ul #tab-names").append(
         "<li id='" + topicToCreate + "tab'><a href='#" + topicToCreate 
         + "' style='color:#066EC9  ; font-family: arial,sans-serif;' role='tab' data-toggle='tab'>" 
         + topicCapTitle + "</a></li>"
 );
         
         
-$("div.tab-content").append(
+$("div .tab-content").append(
             "<div class='tab-pane' style ='display: block' id=" + topicToCreate +"></div>"
         );
         
@@ -61,7 +62,7 @@ $("div.tab-content").append(
         fillNews (topicToCreate);
 
         
-        $("div#tabs").tabs("refresh");
+        $("div #tabs").tabs("refresh");
         topicCount ++;
         
        
