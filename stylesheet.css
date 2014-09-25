@@ -1,6 +1,4 @@
 .logo {
-	width: 450px;
-	height: 120px;
 	display: block;
 	margin: 0 auto;
 }
@@ -11,4 +9,25 @@
 	float: left;
 }
 
-.
+.topdiv {
+	border-top: solid 10px #0061A6;
+}
+
+#uktab {
+	background-color: ;
+}
+
+#uktab a:hover {
+	background-color: #D61D00;
+	color: white !important;
+}
+
+#footballtab a:hover {
+	background-color: #008000;
+	color: white !important;
+}
+
+#traveltab a:hover {
+	background-color: #0061A6;
+	color: white !important;
+}

@@ -2,18 +2,16 @@
 <html>
 <head>
 
-  <!-- below two links seem unnecessary? probably can just delete-->
-<!--<meta http-equiv = "refresh" content = "30"/>-->
- <!--<meta charset="utf-8">-->
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
  <title>The NeapNews</title>
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
- <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
- <link rel="stylesheet" style="text/css" href="stylesheet.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <link rel="stylesheet" style="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
     <script>
@@ -26,43 +24,43 @@
 
 
 <body>
-  
+
+  <div class="container-fluid" id ="headerbox">
+    <div class="row">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-6"> 
+        <div class="topdiv"></div>
+        <div class="row" class="picdiv" class="col-xs-6">
+          <a href="http://neapolitan-a-la-code.github.io/blog/"><img class="img-responsive" class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div id="tabs" class="container-fluid">
     <div class="row">
       <div class="col-xs-3"></div>
-    <div class="col-xs-6">
-      <h1></h1>
-      <div><a href="http://neapolitan-a-la-code.github.io/blog/"><img class="logo" src="https://files.slack.com/files-pri/T02KHSN5M-F02LSKMP0/neapnews.png"></a>
-      </div>
-
-      <ul id="tab-names" class="nav nav-tabs">
-       <!-- took this out of the <li> below  class="active" because it didn't work -->
-       
-       
-<li id="plustab"><a href="#uk-news" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">+</a>
-        </li>
-       
-        <li id="uktab"><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
-        </li>
-        <li id="footballtab"><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
-        </li>
-        <li id="traveltab"><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
-
-       
-      </ul>
+      <div class="col-xs-6">
+        <ul id="tab-names" class="nav nav-tabs">
+          <li id="plustab"><a href="#uk-news" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">+</a>
+          </li>
+          <li id="uktab"><a href="#uk-news"  style="color: #D61D00  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK News</a>
+          </li>
+          <li id="footballtab"><a href="#football" style="color: #008000  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
+          </li>
+          <li id="traveltab"><a href="#travel" style="color: #066EC9  ; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Travel</a>
+        </ul>
   
     <!-- below how the content in script.js is called -->
-    <div class="tab-content">
-      <div class="tab-pane active" id="uk-news"></div>
-      <div class="tab-pane" id="football"></div>
-      <div class="tab-pane" id="travel"></div>
-      <div class="tab-pane" id="culture"></div>
-
+        <div class="tab-content">
+          <div class="tab-pane active" id="uk-news"></div>
+          <div class="tab-pane" id="football"></div>
+          <div class="tab-pane" id="travel"></div>
+          <div class="tab-pane" id="culture"></div>
+        </div>
+      </div>
     </div>
-    
-    </div>
-  
-  </div>
   </div>
 
 <script type="text/javascript" src="script.js"></script>
