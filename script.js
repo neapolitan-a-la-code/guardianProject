@@ -9,7 +9,6 @@ $.ajax({
     cache: false,
     url: "http://content.guardianapis.com/search?api-key=qbgzuh9db2dke2gym45p59wb&show-fields=all&order-by=newest&section=" + sect,
     success: function(data) {
-        window.alert("in ajax" + sect);
         for (var i = 0; i < 5; i++) {
           if  (i === 0) {
         $("#" + sect).append("<img src='" + data.response.results[i].fields.thumbnail + "'>");
@@ -38,17 +37,22 @@ function capFirstLetter(string)
 }
 
 var topicCount = 0;
-var topics = ["culture","politics","world"];
+var topics = ["culture","politics","world","money"];
+
 
     $("div#tabs").tabs();
 
     $("li#plustab").click(function() {
+      
       
       var topicToCreate = (topics[topicCount]);
       var topicCapTitle = capFirstLetter(topicToCreate);
 
         var num_tabs = $("div#tabs ul li").length + 1;
 
+        if (topicCount  == topics.length ) {
+          return null;
+        }
 
         $("ul#tab-names").append(
             "<li id='" + topicToCreate + "tab'><a href='#" + topicToCreate + "' style='color:#066EC9  ; font-family: arial,sans-serif;' role='tab' data-toggle='tab'>" + topicCapTitle + "</a></li>"
@@ -59,7 +63,6 @@ $("div.tab-content").append(
             "<div class='tab-pane' style ='display: block' id=" + topicToCreate +"></div>"
         );
         
-        alert(topicToCreate);
         
         fillNews (topicToCreate);
 
@@ -67,10 +70,7 @@ $("div.tab-content").append(
         $("div#tabs").tabs("refresh");
         topicCount ++;
         
-        $("uk-news").tabs({
-          active: index
-            });
-        
+       
     });
 
    
