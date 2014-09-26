@@ -20,6 +20,8 @@ var fillNews = function(sect) {
             }
         }
     })
+
+    //$("tab-names").tabs();
 };
 
 
@@ -37,16 +39,17 @@ var topics = ["culture","politics","world","money"];
 
 $("div #tabs").tabs();
 
-$("li #plustab").click(function() {
+$("#plustab a").click(function() {
     var topicToCreate = (topics[topicCount]);
     var topicCapTitle = capFirstLetter(topicToCreate);
     var num_tabs = $("div#tabs ul li").length + 1;
+ //   alert("hello");
 
     if (topicCount  == topics.length ) {
         return null;
     }
 
-    $("ul #tab-names").append(
+    $("#tab-names").append(
         "<li id='" + topicToCreate + "tab'><a href='#" + topicToCreate 
         + "' style='color:#066EC9  ; font-family: arial,sans-serif;' role='tab' data-toggle='tab'>" 
         + topicCapTitle + "</a></li>"
@@ -61,7 +64,7 @@ $("div .tab-content").append(
         fillNews (topicToCreate);
 
         
-        $("div #tabs").tabs("refresh");
+//        $("div #tabs").tabs("refresh");
         topicCount ++;
         
        
