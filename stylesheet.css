@@ -28,11 +28,6 @@
 	color: white !important;
 }
 
-#tab-names {
-	font-family: arial,sans-serif;
-	font-size: 125%;
-}
-
 #plustab a {
 	color: purple;
 }
@@ -48,4 +43,17 @@
 #traveltab a {
 	color: #066EC9;
 }
+
+#tab-names li {
+	font-family: arial,sans-serif;
+	font-size: 125%;
+	background-color: #FAFAFA;
+	border-right: 1px solid #A4A4A4;
+	border-left: 1px solid #A4A4A4;
+}
+
+
+
+
+
         
