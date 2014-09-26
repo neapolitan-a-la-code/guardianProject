@@ -60,7 +60,7 @@ $("#plustab a").click(function() {
         
         
 $("div .tab-content").append(
-            "<div class='tab-pane' id=" + topicToCreate +"></div>"
+            "<div class='tab-pane' style ='display: block' id=" + topicToCreate +"></div>"
         );
         
         

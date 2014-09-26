@@ -1,0 +1,59 @@
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.tab-content img {
+	padding-top: 5px;
+	padding-right: 15px;
+	float: left;
+}
+
+.topdiv {
+	border-top: solid 10px #0061A6;
+}
+
+#uktab a:hover {
+	background-color: #D61D00;
+	color: white !important;
+}
+
+#footballtab a:hover {
+	background-color: #008000;
+	color: white !important;
+}
+
+#traveltab a:hover {
+	background-color: #0061A6;
+	color: white !important;
+}
+
+#plustab a {
+	color: purple;
+}
+
+#uktab a {
+	color: #D61D00;
+}
+
+#footballtab a {
+	color: #008000;
+}
+
+#traveltab a {
+	color: #066EC9;
+}
+
+#tab-names li {
+	font-family: arial,sans-serif;
+	font-size: 125%;
+	background-color: #FAFAFA;
+	border-right: 1px solid #A4A4A4;
+	border-left: 1px solid #A4A4A4;
+}
+
+
+
+
+
+        
