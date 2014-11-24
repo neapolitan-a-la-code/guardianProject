@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  
+
+
+     $(function() {
+     $( "#tab-names" ).tabs();
+     });
   
 var fillNews = function(sect) {
 
